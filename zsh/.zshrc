@@ -25,8 +25,8 @@ function git:pull() {
 # Start a new feature. Git flow is required.
 # It is necessary specify the feature name.
 # Usage example: feature:start FT01
-function feature:start() {
-  git flow feature start
+function feature:start {
+  git flow feature start "$1"
 }
 
 # Publish changes in current feature.
@@ -44,8 +44,8 @@ function feature:finish() {
 # Start a new hotfix. Git flow is required.
 # It is necessary specify the hotfix name.
 # Usage example: hotfix:start 1.0.1
-function hotfix:start() {
-  git flow hotfix start
+function hotfix:start {
+  git flow hotfix start "$1"
 }
 
 # Publish changes in current hotfix.
